@@ -1,0 +1,41 @@
+# ============================================================
+# config.yaml ― 作品全体の基本設定
+# 新作を始めるときは、まずこのファイルを編集します。
+# 触る項目は下の3つ（project_name / art_style / chapters）だけでOKです。
+# ============================================================
+
+# 作品タイトル（仮でも可）。各ファイル名の頭に使われます。
+project_name: "[作品タイトル]"
+
+# 絵柄スタイル（画像生成プロンプトの土台になる英語表現）。
+# 作風に合わせて書き換えます。日本語のメモではなく英語で書くと精度が上がります。
+# 例) shoujo（少女漫画）: "japanese shoujo manga style, delicate lines, soft expressions, full color"
+# 例) seinen（青年漫画）: "japanese seinen manga, semi-realistic, clean detailed linework, full color"
+art_style: "japanese manga style, clean linework, full color"
+
+# 章一覧。key は内部用（ch1, ch2 ...）でそのまま使います。
+# name は各章フォルダ名と一致させます（例: 第1章_〇〇 というフォルダを作る）。
+chapters:
+  - key: ch1
+    name: "第1章_[章タイトル]"
+  - key: ch2
+    name: "第2章_[章タイトル]"
+  - key: ch3
+    name: "第3章_[章タイトル]"
+  - key: ch4
+    name: "第4章_[章タイトル]"
+
+# ------------------------------------------------------------
+# 以下は通常そのままでOK（フォルダ構成を変えた人だけ編集）
+# ------------------------------------------------------------
+
+# 参照画像（キャラ・ロケーションの設定資料画像）の置き場所
+ref_dir: "step3_設定資料"
+
+# 完成ページ画像の出力先
+output_dir: "step7_完成画像"
+
+# 仕上がりページの画像サイズ（標準的な漫画ページの縦長比率）
+page_size:
+  width: 1000
+  height: 1414
